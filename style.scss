@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 body {
     font-family: Lato;
 }
@@ -137,7 +145,7 @@ body {
 
 .box-items {
     display: grid;
-    grid-template-rows: repeat(2, 50%);
+    // grid-template-rows: repeat(2, 50%);
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
@@ -393,6 +401,10 @@ body {
     }
 }
 
+.breadcrumbs__link:hover {
+    color: $colorSite;
+}
+
 .product-choosing {
     position: relative;
     margin-bottom: 664px;
@@ -505,5 +517,114 @@ body {
 
     &:hover &__path-text {
         fill: #FFFFFF;
+    }
+}
+
+// page catalog
+.box-filter {
+    height: 132px;
+    padding-top: 51px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+}
+
+.filter {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 360px;
+    position: relative;
+    z-index: 1;
+
+    &[open] {
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] &__head {
+        color: $colorSite;
+    }
+            
+    &[open] path {
+        fill: $colorSite;
+    }
+
+    &__item[open] &__heading{
+        color: $colorSite;
+    }
+
+    &__summary {
+        padding: 13px 0 16px 16px;
+    }
+    &__head {
+        margin-right: 11px;
+    }
+
+    &__content {
+        background-color: #fff;
+        padding: 0 16px 16px 16px;
+    }        
+
+    &__heading {
+        border-left: 5px solid $colorSite;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 8px 0 12px 12px;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &__link {
+        padding-left: 16px;
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+        
+    &__link:hover {
+            color: $colorSite;
+        }
+
+}
+
+.filter-sort {
+    padding-top: 13px;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+
+    &__head {
+        margin-right: 11px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        background-color: #fff;
+        padding: 9px;
+        width: 80px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        position: absolute;
+        top: 34px;
+        left: -9px;
+    }
+
+    &__checkbox {
+        margin-right: 9px;
     }
 }
