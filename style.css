@@ -556,7 +556,7 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-top: 96px;
-  margin-bottom: 72px;
+  margin-bottom: 128px;
 }
 
 .cart-item {
@@ -602,4 +602,26 @@ body {
 }
 .cart-item-dsc__price {
   color: #F16D7F;
+}
+
+.box-bnt {
+  display: flex;
+  justify-content: space-between;
+  width: 652px;
+  margin-top: 32px;
+}
+.box-bnt__text {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 15px 40px;
+  border: 1px solid #A4A4A4;
+  background-color: #fff;
+}
+.box-bnt__text:hover {
+  color: #fff;
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
 }/*# sourceMappingURL=style.css.map */

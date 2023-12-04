@@ -637,7 +637,7 @@ body {
     flex-direction: column;
     gap: 40px;
     margin-top: 96px;
-    margin-bottom: 72px;
+    margin-bottom: 128px;
 }
 
 .cart-item {
@@ -689,5 +689,29 @@ body {
 
     &__price {
         color: $colorSite;
+    }
+}
+
+.box-bnt {
+    display: flex;
+    justify-content: space-between;
+    width: 652px;
+    margin-top: 32px;
+
+    &__text {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding: 15px 40px;
+        border: 1px solid #A4A4A4;
+        background-color: #fff;
+    }
+
+    &__text:hover {
+        color: #fff;
+        border: 1px solid $colorSite;
+        background-color: $colorSite;
     }
 }
