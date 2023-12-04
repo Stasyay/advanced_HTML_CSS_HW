@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 body {
     font-family: Lato;
 }
@@ -137,7 +145,7 @@ body {
 
 .box-items {
     display: grid;
-    grid-template-rows: repeat(2, 50%);
+    // grid-template-rows: repeat(3, 33%);
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
@@ -388,9 +396,13 @@ body {
         color: $colorSite;
         font-size: 14px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 300;
         line-height: normal;
     }
+}
+
+.breadcrumbs__link:hover {
+    color: $colorSite;
 }
 
 .product-choosing {
@@ -506,4 +518,63 @@ body {
     &:hover &__path-text {
         fill: #FFFFFF;
     }
+}
+
+// page catalog
+
+.box-filter {
+    height: 132px;
+    padding-top: 51px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+}
+
+.filter {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    &[open] {
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] &__heading {
+        color: $colorSite;
+    }
+
+    &[open] path {
+        fill: $colorSite;
+    }
+
+    &__content {
+        background-color: #fff;
+        padding: 0 16px 16px 16px;
+    }
+
+    &__img {
+        margin-left: 4px;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        padding-left: 18px;
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__link:hover {
+        color: $colorSite;
+    }
+
 }
