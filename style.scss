@@ -17,14 +17,6 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary {
-    display: block;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 body {
     font-family: Lato;
 }
@@ -635,5 +627,67 @@ body {
 
     &__checkbox {
         margin-right: 9px;
+    }
+}
+
+//page cart
+
+.container-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.cart-item {
+    position: relative;
+    display: flex;
+    // margin-bottom: 40px;
+    width: 652px;
+    box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+
+    &__close {
+        position: absolute;
+        right: 22px;
+        top: 28px;
+        border: 0;
+        background-color: #FFF;
+    }
+
+    &__close:hover .path-close {
+        fill: $colorSite;
+    }
+
+    &__img {
+        width: 262px;
+        height: 306px;
+    }
+}
+
+.cart-item-dsc {
+    padding: 22px 97px 0 31px;
+    box-sizing: border-box;
+
+    &__name {
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 42px;
+        width: 210px;
+    }
+
+    &__prop {
+        color: #6F6E6E;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__price {
+        color: $colorSite;
     }
 }

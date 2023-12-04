@@ -471,30 +471,47 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  width: 360px;
+  position: relative;
+  z-index: 1;
 }
 .filter[open] {
   background: #FFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
-.filter[open] .filter__heading {
+.filter[open] .filter__head {
   color: #F16D7F;
 }
 .filter[open] path {
   fill: #F16D7F;
 }
+.filter__item[open] .filter__heading {
+  color: #F16D7F;
+}
+.filter__summary {
+  padding: 13px 0 16px 16px;
+}
+.filter__head {
+  margin-right: 11px;
+}
 .filter__content {
   background-color: #fff;
   padding: 0 16px 16px 16px;
 }
-.filter__img {
-  margin-left: 4px;
+.filter__heading {
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 8px 0 12px 12px;
 }
 .filter__link-box {
   display: flex;
   flex-direction: column;
+  gap: 11px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .filter__link {
-  padding-left: 18px;
+  padding-left: 16px;
   color: #6F6E6E;
   font-size: 14px;
   font-style: normal;
@@ -502,5 +519,87 @@ body {
   line-height: normal;
 }
 .filter__link:hover {
+  color: #F16D7F;
+}
+
+.filter-sort {
+  padding-top: 13px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+}
+.filter-sort__head {
+  margin-right: 11px;
+}
+.filter-sort__content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  background-color: #fff;
+  padding: 9px;
+  width: 80px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  top: 34px;
+  left: -9px;
+}
+.filter-sort__checkbox {
+  margin-right: 9px;
+}
+
+.container-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.cart-item {
+  position: relative;
+  display: flex;
+  width: 652px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+.cart-item__close {
+  position: absolute;
+  right: 22px;
+  top: 28px;
+  border: 0;
+  background-color: #FFF;
+}
+.cart-item__close:hover .path-close {
+  fill: #F16D7F;
+}
+.cart-item__img {
+  width: 262px;
+  height: 306px;
+}
+
+.cart-item-dsc {
+  padding: 22px 97px 0 31px;
+  box-sizing: border-box;
+}
+.cart-item-dsc__name {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+  width: 210px;
+}
+.cart-item-dsc__prop {
+  color: #6F6E6E;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart-item-dsc__price {
   color: #F16D7F;
 }/*# sourceMappingURL=style.css.map */
