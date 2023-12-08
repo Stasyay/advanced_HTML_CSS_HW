@@ -32,7 +32,6 @@
 
         <div class="box-cart center">
             <div class="container-items">
-
                 <a class="cart-item" href="#">
                     <button class="cart-item__close">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,11 +44,12 @@
                     <div class="cart-item-dsc">
                         <h2 class="cart-item-dsc__name">MANGO PEOPLE T-SHIRT</h2>
                         <h4 class="cart-item-dsc__prop">Price: <span class="cart-item-dsc__price">$300</span> </h4>
-                        <h4 class="cart-item-dsc__prop">Color: Red</h4>
-                        <h4 class="cart-item-dsc__prop">Size: Xl</h4>
+                        <h4 class="cart-item-dsc__prop">Color: <span class="cart-item-dsc__prop_color">Red</span></h4>
+                        <h4 class="cart-item-dsc__prop">Size: <span class="cart-item-dsc__prop_color">Xl</span></h4>
                         <p class="cart-item-dsc__prop">
                             <label for="quantity">Quantity:</label>
-                            <input type="number" step="1" min="0" max="99" id="quantity" />
+                            <input class="cart-item-dsc__quantity" type="number" step="1" min="0" max="99" id="quantity"
+                                value="2" />
                         </p>
                     </div>
 
@@ -66,11 +66,12 @@
                     <div class="cart-item-dsc">
                         <h2 class="cart-item-dsc__name">MANGO PEOPLE T-SHIRT</h2>
                         <h4 class="cart-item-dsc__prop">Price: <span class="cart-item-dsc__price">$300</span> </h4>
-                        <h4 class="cart-item-dsc__prop">Color: Red</h4>
-                        <h4 class="cart-item-dsc__prop">Size: Xl</h4>
+                        <h4 class="cart-item-dsc__prop">Color: <span class="cart-item-dsc__prop_color">Red</span></h4>
+                        <h4 class="cart-item-dsc__prop">Size: <span class="cart-item-dsc__prop_color">Xl</span></h4>
                         <p class="cart-item-dsc__prop">
                             <label for="quantity">Quantity:</label>
-                            <input type="number" step="1" min="0" max="99" id="quantity" />
+                            <input class="cart-item-dsc__quantity" type="number" step="1" min="0" max="99" id="quantity"
+                                value="2" />
                         </p>
                     </div>
 
@@ -80,7 +81,27 @@
                     <a href="#" class="box-bnt__text">CLEAR SHOPPING CART</a>
                     <a href="#" class="box-bnt__text">CONTINUE SHOPPING</a>
                 </div>
+            </div>
+            <div class="container-shipping">
+                <div class="adress">
+                    <h3 class="adress__title">SHIPPING ADRESS</h3>
+                    <input class="adress__text" type="text" placeholder="Country" value="Bangladesh">
+                    <input class="adress__text" type="text" placeholder="State">
+                    <input class="adress__text" type="text" placeholder="Postcode / Zip">
+                    <a href="#" class="adress__bnt-text">GET A QUOTE</a>
+                </div>
 
+                <div class="checkout">
+                    <h4 class="checkout__subtotal">SUB TOTAL $900</h4>
+                    <h3 class="checkout__total">GRAND TOTAL <span class="checkout__total_price">$900</span></h3>
+                    <svg class="checkout__line" xmlns="http://www.w3.org/2000/svg" width="275" height="1"
+                        viewBox="0 0 275 1" fill="none">
+                        <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                    </svg>
+                    <div class="checkout__bnt">
+                        <a href="#" class="checkout__bnt-text">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
 
             </div>
         </div>
