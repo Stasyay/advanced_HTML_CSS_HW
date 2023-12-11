@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -44,9 +45,14 @@ body {
 
 .promo {
   display: flex;
-  background: #F1E4E6;
+  gap: 64px;
+  background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%);
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
+}
+.promo__img {
+  width: 100%;
+  height: 100%;
 }
 .promo__info {
   border-left: 12px solid #F16D7F;
@@ -69,8 +75,9 @@ body {
   padding-top: 65px;
   padding-bottom: 96px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 30px;
+  grid-auto-flow: dense;
 }
 .offer__item img {
   filter: brightness(40%);
@@ -237,7 +244,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .subscribe__item {
   padding-bottom: 156px;
   display: flex;
@@ -846,4 +852,164 @@ body {
   gap: 16px;
   list-style-image: url(img/marker.svg);
   list-style-position: inside;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
+  }
+  .header {
+    padding: 0 32px;
+  }
+  .promo {
+    padding-left: calc(50% - 385px);
+    padding-right: calc(50% - 385px);
+  }
+  .promo__img {
+    width: 382px;
+  }
+  .promo__info {
+    margin-top: 138px;
+  }
+  .promo__title {
+    font-size: 44px;
+    font-weight: 900;
+  }
+  .promo__heading {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .offer {
+    padding: 20px 16px 154px 16px;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    gap: 20px;
+  }
+  .offer__item-img {
+    width: 100%;
+    height: 100%;
+  }
+  .offer__item-big {
+    min-height: 116px;
+  }
+  .product-top__title {
+    margin-bottom: 3px;
+  }
+  .product-top__text {
+    margin-bottom: 74px;
+  }
+  .box-items {
+    padding: 0 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .bnt-browse__text {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+  .features {
+    height: 610px;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .feature-item__text {
+    max-width: 360px;
+  }
+  .subscribe {
+    height: 693px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 64px;
+  }
+  .subscribe__item {
+    padding-bottom: 78px;
+  }
+  .footer {
+    padding: 0 32px;
+  }
+  .top-head {
+    padding: 60px 16px;
+  }
+  .product-content {
+    width: 768px;
+  }
+  .box-cart {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .container-items {
+    margin-top: 59px;
+    margin-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 734px;
+  }
+  .box-bnt {
+    margin-top: 22px;
+  }
+  .container-shipping {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 734px;
+  }
+  .adress {
+    gap: 15px;
+    margin-top: 0;
+  }
+  .checkout {
+    margin-top: 32px;
+    padding-top: 0;
+    box-sizing: border-box;
+    height: 214px;
+    background-color: #F5F3F3;
+    text-align: end;
+  }
+  .checkout__subtotal {
+    color: #4A4A4A;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 34px;
+    margin-bottom: 12px;
+  }
+  .checkout__total {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-right: 37px;
+    margin-bottom: 21px;
+  }
+  .checkout__total_price {
+    color: #F16D7F;
+  }
+  .checkout__line {
+    padding-right: 42px;
+    margin-bottom: 32px;
+  }
+  .checkout__bnt {
+    padding-right: 42px;
+  }
+  .checkout__bnt-text {
+    box-sizing: border-box;
+    border: 1px solid #F16D7F;
+    background-color: #F16D7F;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 16px 42px;
+  }
+  .checkout__bnt-text:hover {
+    border: 1px solid #F16D7F;
+    background-color: #FFF;
+    color: #F16D7F;
+  }
 }/*# sourceMappingURL=style.css.map */
