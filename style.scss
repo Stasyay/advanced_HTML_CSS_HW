@@ -1089,7 +1089,6 @@ body {
 
     .product-content {
         width: 768px;
-
     }
 
     //page cart
@@ -1116,6 +1115,7 @@ body {
         justify-content: space-between;
         padding-left: 16px;
         padding-right: 16px;
+        padding-bottom: 138px;
         min-width: 734px;
     }
 
@@ -1126,62 +1126,14 @@ body {
 
     .checkout {
         margin-top: 32px;
-        padding-top: 0;
+        padding-top: 39px;
         box-sizing: border-box;
         height: 214px;
         background-color: #F5F3F3;
-        text-align: end;
-
-        &__subtotal {
-            color: #4A4A4A;
-            font-size: 11px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            padding-right: 34px;
-            margin-bottom: 12px;
-        }
-
-        &__total {
-            color: #222;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            padding-right: 37px;
-            margin-bottom: 21px;
-
-            &_price {
-                color: #F16D7F;
-            }
-        }
-
-        &__line {
-            padding-right: 42px;
-            margin-bottom: 32px;
-        }
 
         &__bnt {
-            padding-right: 42px;
+            padding-left: 42px;
         }
 
-        &__bnt-text {
-            box-sizing: border-box;
-            border: 1px solid #F16D7F;
-            background-color: #F16D7F;
-            color: #FFF;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            padding: 16px 42px;
-        }
-
-        &__bnt-text:hover {
-            border: 1px solid #F16D7F;
-            background-color: #FFF;
-            color: #F16D7F;
-        }
     }
-
 }
