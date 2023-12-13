@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -20,9 +22,9 @@
                 <a href="#"><img src="img/search.svg" alt="search"></a>
             </div>
             <nav class="header__right">
-                <a href="#"><img src="img/burger_menu.svg" alt="menu"></a>
-                <a href="#"><img src="img/registration.svg" alt="registration"></a>
-                <a href="#"><img src="img/basket.svg" alt="basket"></a>
+                <a class="header__burger" href="#"><img src="img/burger_menu.svg" alt="menu"></a>
+                <a class="header__registration" href="#"><img src="img/registration.svg" alt="registration"></a>
+                <a class="header__basket" href="cart.html"><img src="img/basket.svg" alt="basket"></a>
             </nav>
         </header>
 
@@ -39,8 +41,8 @@
 
         <div class="box-filter center">
             <details class="filter">
-                <summary class="filter__summary"><span class="filter__head">FILTER</span><svg width="15" height="10"
-                        viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <summary class="filter__summary"><span class="filter__head">FILTER</span><svg class="filter__head-img"
+                        width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
                             fill="black" />
@@ -290,6 +292,31 @@
                 </a>
             </div>
         </div>
+
+        <nav aria-label="Navigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link page-link_arrow" href="#" aria-label="Previos">
+                        <span aria-hidden="true">&lsaquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                <li class="page-item">
+                    <a class="page-link page-link_arrow" href="#" aria-label="Next">
+                        <span class="size-saquo" aria-hidden="true">&rsaquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
 
         <div class="subscribe center">
             <div class="subscribe__item">
