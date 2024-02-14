@@ -21,6 +21,9 @@ summary::-webkit-details-marker {
 
 body {
     font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    overflow-x: hidden;
 }
 
 .center {
@@ -46,6 +49,86 @@ body {
         align-items: center;
         gap: 33px;
     }
+}
+
+.search:hover .path-searh {
+    fill: $colorSite;
+}
+
+.header__burger:hover .path-burger {
+    fill: $colorSite;
+}
+
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.burger-menu {
+        right: 0;
+    }
+}
+
+.burger-menu {
+    background: #FFF;
+    box-shadow: (6px 4px 35px rgba(0, 0, 0, 0.21));
+    width: $widthBurgerMenu;
+    padding: 16px 16px 14px 34px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 75px;
+    right: -$widthBurgerMenu;
+    transition: right .3s;
+
+    &__close {
+        margin-left: 168px;
+    }
+
+    &__close:hover .path-close {
+        fill: $colorSite;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__head {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__heading {
+        color: $colorSite;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__link:hover {
+        color: $colorSite;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-left: 21px;
+    }
+}
+
+.header__registration:hover .path-registration {
+    fill: $colorSite;
+}
+
+.header__basket:hover .path-basket {
+    fill: $colorSite;
 }
 
 .promo {
@@ -707,6 +790,7 @@ body {
 
     &__close:hover .path-close {
         fill: $colorSite;
+        pointer-events: none;
     }
 
     &__img {
@@ -743,6 +827,7 @@ body {
     }
 
     &__quantity {
+        pointer-events: auto;
         width: 44px;
         margin-left: 24px;
         padding-left: 16px;
