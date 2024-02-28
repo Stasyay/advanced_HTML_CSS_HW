@@ -150,16 +150,15 @@ productItemEls.forEach(element => {
             cartItemDsc.append(productPrpQuantity)
         })
 
-        const closeEls = document.querySelectorAll('.cart-product__close');
-        let elemCount = closeEls.length
+        const closeEls = document.querySelectorAll('.cart-product__close')
+        const boxItemEls = document.querySelector('.box-cart-items')
         closeEls.forEach(element => {
             element.addEventListener('click', function (e) {
                 element.parentElement.remove()
-                elemCount--
-                if (elemCount === 0) {
+                if (boxItemEls.children.length < 2) {
                     cartItemsEl.style.display = 'none'
                 }
-            });
+            })
         })
     })
 })
